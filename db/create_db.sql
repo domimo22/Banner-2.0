@@ -18,9 +18,9 @@ CREATE TABLE department_table (
     PRIMARY KEY(DepartmentID)
 );
 
--- insert into department_table (Name) values ('Biology');
--- insert into department_table (Name) values ('Cybersecurity');
--- insert into department_table (Name) values ('Political Science');
+insert into department_table (Name) values ('Biology');
+insert into department_table (Name) values ('Cybersecurity');
+insert into department_table (Name) values ('Political Science');
 -- insert into department_table (Name) values ('Finance');
 -- insert into department_table (Name) values ('Chemistry');
 -- insert into department_table (Name) values ('Zoology');
@@ -36,13 +36,13 @@ CREATE TABLE professor_table (
         ON UPDATE cascade ON DELETE restrict
 );
 
--- insert into professor_table (FirstName, LastName, DepartmentID) values ('Arluene', 'Aleshintsev', 0000001);
+insert into professor_table (FirstName, LastName, DepartmentID) values ('Arluene', 'Aleshintsev', 0000001);
 -- insert into professor_table (FirstName, LastName, DepartmentID) values ('Romona', 'McBrearty', 0000001);
 -- insert into professor_table (FirstName, LastName, DepartmentID) values ('Jacquetta', 'Bane', 0000001);
 -- insert into professor_table (FirstName, LastName, DepartmentID) values ('Gina', 'Hymer', 0000001);
 -- insert into professor_table (FirstName, LastName, DepartmentID) values ('Cordie', 'Churchyard', 0000001);
--- insert into professor_table (FirstName, LastName, DepartmentID) values ('Berni', 'Trayte', 0000002);
--- insert into professor_table (FirstName, LastName, DepartmentID) values ('Chickie', 'Maliffe', 0000003);
+insert into professor_table (FirstName, LastName, DepartmentID) values ('Berni', 'Trayte', 0000002);
+insert into professor_table (FirstName, LastName, DepartmentID) values ('Chickie', 'Maliffe', 0000003);
 -- insert into professor_table (FirstName, LastName, DepartmentID) values ('Perceval', 'Tuckley', 0000004);
 -- insert into professor_table (FirstName, LastName, DepartmentID) values ('Hilario', 'Braghini', 0000005);
 -- insert into professor_table (FirstName, LastName, DepartmentID) values ('Laurice', 'McComish', 0000006);
@@ -253,10 +253,10 @@ CREATE TABLE weeklypayment_table (
 
 -- insert into major_table (MajorID, Name, DepartmentID) values (6729828, 'Finance', 0000001);
 -- insert into major_table (MajorID, Name, DepartmentID) values (9677412, 'Actuarial Science', 0000001);
--- insert into major_table (MajorID, Name, DepartmentID) values (1517944, 'Cybersecurity', 0000001);
--- insert into major_table (MajorID, Name, DepartmentID) values (8879936, 'Political Science', 0000001);
+insert into major_table (MajorID, Name, DepartmentID) values (1517944, 'Cybersecurity', 0000002);
+insert into major_table (MajorID, Name, DepartmentID) values (8879936, 'Political Science', 0000003);
 -- insert into major_table (MajorID, Name, DepartmentID) values (2878849, 'Molecular Biology', 0000001);
--- insert into major_table (MajorID, Name, DepartmentID) values (4202563, 'Biology', 0000001);
+insert into major_table (MajorID, Name, DepartmentID) values (4202563, 'Biology', 0000001);
 -- insert into major_table (MajorID, Name, DepartmentID) values (2529314, 'Microbiology', 0000001);
 -- insert into major_table (MajorID, Name, DepartmentID) values (9027164, 'Chemistry', 0000001);
 -- insert into major_table (MajorID, Name, DepartmentID) values (1650644, 'Applied Chemistry', 0000001);
@@ -264,13 +264,13 @@ CREATE TABLE weeklypayment_table (
 
 -- insert into minor_table (MinorID, Name, DepartmentID) values (4272475, 'Finance', 0000001);
 -- insert into minor_table (MinorID, Name, DepartmentID) values (2147769, 'Actuarial Science', 0000001);
--- insert into minor_table (MinorID, Name, DepartmentID) values (4710247, 'Cybersecurity', 0000001);
--- insert into minor_table (MinorID, Name, DepartmentID) values (9587329, 'Political Science', 0000001);
--- insert into minor_table (MinorID, Name, DepartmentID) values (1359361, 'Molecular Biology', 0000001);
+insert into minor_table (MinorID, Name, DepartmentID) values (4710247, 'Cybersecurity', 0000002);
+insert into minor_table (MinorID, Name, DepartmentID) values (9587329, 'Political Science', 0000003);
+insert into minor_table (MinorID, Name, DepartmentID) values (1359361, 'Molecular Biology', 0000001);
 
--- insert into advisor_table (AdvisorID, FirstName, LastName, DepartmentID) values (5913725, 'Aliza', 'Chapelhow', 0000001);
--- insert into advisor_table (AdvisorID, FirstName, LastName, DepartmentID) values (9273126, 'Murdock', 'Tincey', 0000001);
--- insert into advisor_table (AdvisorID, FirstName, LastName, DepartmentID) values (192595, 'Odele', 'Bradfield', 0000001);
+insert into advisor_table (FirstName, LastName, DepartmentID) values ('Aliza', 'Chapelhow', 0000001);
+insert into advisor_table (FirstName, LastName, DepartmentID) values ('Murdock', 'Tincey', 0000002);
+insert into advisor_table (FirstName, LastName, DepartmentID) values ('Odele', 'Bradfield', 0000003);
 -- insert into advisor_table (AdvisorID, FirstName, LastName, DepartmentID) values (1109098, 'Andra', 'Vanyushkin', 0000001);
 -- insert into advisor_table (AdvisorID, FirstName, LastName, DepartmentID) values (2916282, 'Bobbee', 'Byrd', 0000001);
 -- insert into advisor_table (AdvisorID, FirstName, LastName, DepartmentID) values (6186641, 'Adams', 'Lutwyche', 0000001);
@@ -279,7 +279,7 @@ CREATE TABLE weeklypayment_table (
 -- insert into advisor_table (AdvisorID, FirstName, LastName, DepartmentID) values (5797291, 'Tan', 'Wakely', 0000001);
 -- insert into advisor_table (AdvisorID, FirstName, LastName, DepartmentID) values (392286, 'Janel', 'Landrean', 0000001);
 
--- insert into course_table (CourseID, Name, DepartmentID, Credits) values (4766319, 'Introduction to Biology', 0000001, 1);
+insert into course_table (CourseID, Name, DepartmentID, Credits) values (4766319, 'Introduction to Biology', 0000001, 1);
 -- insert into course_table (CourseID, Name, DepartmentID, Credits) values (1156480, 'Medical Neurology', 0000001, 2);
 -- insert into course_table (CourseID, Name, DepartmentID, Credits) values (6518136, 'Genetics and Evolution', 0000001, 1);
 -- insert into course_table (CourseID, Name, DepartmentID, Credits) values (5977492, 'Nutraceuticals', 0000001, 3);
@@ -289,11 +289,11 @@ CREATE TABLE weeklypayment_table (
 -- insert into course_table (CourseID, Name, DepartmentID, Credits) values (8386500, 'Interplanetary Composition', 0000001, 4);
 -- insert into course_table (CourseID, Name, DepartmentID, Credits) values (3169393, 'Political Science 1', 0000001, 4);
 -- insert into course_table (CourseID, Name, DepartmentID, Credits) values (4412004, 'Political Debate', 0000001, 4);
--- insert into course_table (CourseID, Name, DepartmentID, Credits) values (1372233, 'Government Intervention in Military', 0000001, 1);
--- insert into course_table (CourseID, Name, DepartmentID, Credits) values (8299304, 'Politics and Media', 0000001, 3);
--- insert into course_table (CourseID, Name, DepartmentID, Credits) values (1491026, 'Introduction to Cybersecurity', 0000001, 3);
+insert into course_table (CourseID, Name, DepartmentID, Credits) values (1372233, 'Government Intervention in Military', 0000003, 1);
+insert into course_table (CourseID, Name, DepartmentID, Credits) values (8299304, 'Politics and Media', 0000003, 3);
+insert into course_table (CourseID, Name, DepartmentID, Credits) values (1491026, 'Introduction to Cybersecurity', 0000002, 3);
 -- insert into course_table (CourseID, Name, DepartmentID, Credits) values (1491027, 'Recitation for Intro to Cyber', 0000001, 1);
--- insert into course_table (CourseID, Name, DepartmentID, Credits) values (2484292, 'Cybersecurity Policy', 0000001, 1);
+insert into course_table (CourseID, Name, DepartmentID, Credits) values (2484292, 'Cybersecurity Policy', 0000002, 1);
 -- insert into course_table (CourseID, Name, DepartmentID, Credits) values (3475028, 'Financial Management', 0000001, 3);
 -- insert into course_table (CourseID, Name, DepartmentID, Credits) values (3145697, 'Investments', 0000001, 3);
 -- insert into course_table (CourseID, Name, DepartmentID, Credits) values (5878074, 'Blockchain Fundamentals', 0000001, 1);
@@ -312,9 +312,11 @@ CREATE TABLE weeklypayment_table (
 -- insert into prerequisites_table (NextCourse, RequiredCourse, DateAdded) values (7351954, 4865007, '2016-02-04');
 -- insert into prerequisites_table (NextCourse, RequiredCourse, DateAdded) values (1156480, 4766319, '2020-11-14');
 -- insert into prerequisites_table (NextCourse, RequiredCourse, DateAdded) values (5977492, 4766319, '2016-08-19');
+insert into prerequisites_table (NextCourse, RequiredCourse, DateAdded) values (2484292, 1491026, '2016-08-19');
 
 -- insert into corequisites_table (Course1, Course2) values (4865007, 4865008);
 -- insert into corequisites_table (Course1, Course2) values (1491026, 1491027);
+insert into corequisites_table (Course1, Course2) values (1372233, 8299304);
 
 -- insert into section_table (SectionID, Semester, ProfessorID, CourseID, SectionYear) values (811299, 'Fall', 0000001, 4766319, 1987);
 -- insert into section_table (SectionID, Semester, ProfessorID, CourseID, SectionYear) values (9135305, 'Fall', 0000001, 1156480, 1994);
@@ -326,8 +328,8 @@ CREATE TABLE weeklypayment_table (
 -- insert into section_table (SectionID, Semester, ProfessorID, CourseID, SectionYear) values (6567602, 'Fall', 0000001, 8386500, 2010);
 -- insert into section_table (SectionID, Semester, ProfessorID, CourseID, SectionYear) values (258700, 'Fall', 0000001, 3169393, 2007);
 -- insert into section_table (SectionID, Semester, ProfessorID, CourseID, SectionYear) values (5676838, 'Fall', 0000001, 4412004, 2006);
--- insert into section_table (SectionID, Semester, ProfessorID, CourseID, SectionYear) values (3228260, 'Fall', 0000001, 1372233, 1997);
--- insert into section_table (SectionID, Semester, ProfessorID, CourseID, SectionYear) values (1495937, 'Fall', 0000001, 8299304, 1992);
+insert into section_table (SectionID, Semester, ProfessorID, CourseID, SectionYear) values (0000001, 'Fall', 0000003, 1372233, 1997);
+insert into section_table (SectionID, Semester, ProfessorID, CourseID, SectionYear) values (0000002, 'Fall', 0000003, 8299304, 1992);
 -- insert into section_table (SectionID, Semester, ProfessorID, CourseID, SectionYear) values (7659070, 'Fall', 0000001, 1491026, 2006);
 -- insert into section_table (SectionID, Semester, ProfessorID, CourseID, SectionYear) values (1288238, 'Fall', 0000001, 1491027, 2000);
 -- insert into section_table (SectionID, Semester, ProfessorID, CourseID, SectionYear) values (5830404, 'Fall', 0000001, 2484292, 2004);
@@ -339,8 +341,8 @@ CREATE TABLE weeklypayment_table (
 -- insert into section_table (SectionID, Semester, ProfessorID, CourseID, SectionYear) values (9442869, 'Fall', 0000001, 1481117, 1970);
 -- insert into section_table (SectionID, Semester, ProfessorID, CourseID, SectionYear) values (9452868, 'Fall', 0000001, 7242042, 1970);
 
--- insert into instruction_period (PeriodID, InstructionalMethod, InstructionDate, InstructionTime, SectionID) values (8426482, 'Virtual', '2021-10-09', '11:19:00', 811299);
--- insert into instruction_period (PeriodID, InstructionalMethod, InstructionDate, InstructionTime, SectionID) values (9538654, 'In-Person', '2021-10-09', '7:55:00', 9135305);
+insert into instruction_period (InstructionalMethod, InstructionDate, InstructionTime, SectionID) values ('Virtual', '2021-10-09', '11:19:00', 0000001);
+insert into instruction_period (InstructionalMethod, InstructionDate, InstructionTime, SectionID) values ('In-Person', '2021-10-09', '7:55:00', 0000002);
 -- insert into instruction_period (PeriodID, InstructionalMethod, InstructionDate, InstructionTime, SectionID) values (0163967, 'Virtual', '2021-10-09', '6:04:00', 6774539);
 -- insert into instruction_period (PeriodID, InstructionalMethod, InstructionDate, InstructionTime, SectionID) values (1296453, 'Virtual', '2021-10-09', '1:25:00', 8831489);
 -- insert into instruction_period (PeriodID, InstructionalMethod, InstructionDate, InstructionTime, SectionID) values (5285928, 'Virtual', '2021-10-09', '1:09:00', 9951836);
@@ -362,9 +364,9 @@ CREATE TABLE weeklypayment_table (
 -- insert into instruction_period (PeriodID, InstructionalMethod, InstructionDate, InstructionTime, SectionID) values (7343949, 'In-Person', '2021-10-09', '8:22:00', 9442869);
 -- insert into instruction_period (PeriodID, InstructionalMethod, InstructionDate, InstructionTime, SectionID) values (1288593, 'Virtual', '2021-10-09', '4:56:00', 9452868);
 
--- insert into student_table (StudentID, FirstName, LastName, MiddleInitial, GPA, StartYear, GraduationYear, BirthDate, Age, MajorID, MinorID, AdvisorID, CreditsCompleted, Enrolled) values (6351648, 'Lance', 'enzley', 'F', 1.7027, 2000, 2012, '2000-02-11', 22, 6729828, null, 5162667, 117.2, 1);
--- insert into student_table (StudentID, FirstName, LastName, MiddleInitial, GPA, StartYear, GraduationYear, BirthDate, Age, MajorID, MinorID, AdvisorID, CreditsCompleted, Enrolled) values (1887664, 'Brion', 'Jerrome', 'S', 2.1742, 2009, 2009, '2004-12-04', 18, 6729828, null, 5162667, 85.9, 1);
--- insert into student_table (StudentID, FirstName, LastName, MiddleInitial, GPA, StartYear, GraduationYear, BirthDate, Age, MajorID, MinorID, AdvisorID, CreditsCompleted, Enrolled) values (3337937, 'Nelie', 'Evangelinos', 'N', 3.2888, 2003, 1999, '2001-06-09', 21, 9677412, null, 5797291, 36.4, 1);
+insert into student_table (FirstName, LastName, MiddleInitial, GPA, StartYear, GraduationYear, BirthDate, Age, MajorID, MinorID, AdvisorID, CreditsCompleted, Enrolled) values ('Lance', 'enzley', 'F', 1.7027, 2000, 2012, '2000-02-11', 22, 1517944, null, 0000002, 117.2, 1);
+insert into student_table (FirstName, LastName, MiddleInitial, GPA, StartYear, GraduationYear, BirthDate, Age, MajorID, MinorID, AdvisorID, CreditsCompleted, Enrolled) values ('Brion', 'Jerrome', 'S', 2.1742, 2009, 2009, '2004-12-04', 18, 4202563, null, 0000001, 85.9, 1);
+-- insert into student_table (FirstName, LastName, MiddleInitial, GPA, StartYear, GraduationYear, BirthDate, Age, MajorID, MinorID, AdvisorID, CreditsCompleted, Enrolled) values (3337937, 'Nelie', 'Evangelinos', 'N', 3.2888, 2003, 1999, '2001-06-09', 21, 9677412, null, 5797291, 36.4, 1);
 -- insert into student_table (StudentID, FirstName, LastName, MiddleInitial, GPA, StartYear, GraduationYear, BirthDate, Age, MajorID, MinorID, AdvisorID, CreditsCompleted, Enrolled) values (8553096, 'Teena', 'Lockey', 'C', 3.6734, 2013, 2010, '2003-06-14', 19, 9677412, 1359361, 5797291, 35.1, 1);
 -- insert into student_table (StudentID, FirstName, LastName, MiddleInitial, GPA, StartYear, GraduationYear, BirthDate, Age, MajorID, MinorID, AdvisorID, CreditsCompleted, Enrolled) values (3667924, 'Desiree', 'Ouldred', 'U', 1.8208, 2001, 1995, '2003-12-26', 19, 1517944, null, 7516941, 7.5, 1);
 -- insert into student_table (StudentID, FirstName, LastName, MiddleInitial, GPA, StartYear, GraduationYear, BirthDate, Age, MajorID, MinorID, AdvisorID, CreditsCompleted, Enrolled) values (7955470, 'Harrison', 'Adamides', 'U', 0.0037, 1985, 2006, '2000-05-21', 22, 1517944, null, 7516941, 196.9, 0);
@@ -383,16 +385,16 @@ CREATE TABLE weeklypayment_table (
 -- insert into student_table (StudentID, FirstName, LastName, MiddleInitial, GPA, StartYear, GraduationYear, BirthDate, Age, MajorID, MinorID, AdvisorID, CreditsCompleted, Enrolled) values (5802529, 'Claire', 'Suttle', 'C', 2.1519, 1996, 2011, '2001-02-15', 21, 5363325, null, 392286, 84.4, 0);
 -- insert into student_table (StudentID, FirstName, LastName, MiddleInitial, GPA, StartYear, GraduationYear, BirthDate, Age, MajorID, MinorID, AdvisorID, CreditsCompleted, Enrolled) values (6105055, 'Georgine', 'Keeping', 'U', 1.5213, 1993, 1996, '2001-07-06', 21, 5363325, null, 392286, 0.9, 1);
 
--- insert into sectionta_table (EmploymentID, StudentID, SectionID, TotalPay, DollarPerHour, StartDate, EndDate, TotalHours) values (1487894, 8552039, 9951836, 23.12, 16.67, '2022-10-17', '2021-10-09', 49.15);
--- insert into sectionta_table (EmploymentID, StudentID, SectionID, TotalPay, DollarPerHour, StartDate, EndDate, TotalHours) values (279534, 5802529, 9442868, 33.14, 15.08, '2022-01-02', '2022-03-18', 13.63);
+insert into sectionta_table (StudentID, SectionID, TotalPay, DollarPerHour, StartDate, EndDate, TotalHours) values (0000001, 0000001, 23.12, 16.67, '2022-10-17', '2021-10-09', 49.15);
+insert into sectionta_table (StudentID, SectionID, TotalPay, DollarPerHour, StartDate, EndDate, TotalHours) values (0000002, 0000002, 33.14, 15.08, '2022-01-02', '2022-03-18', 13.63);
 -- insert into sectionta_table (EmploymentID, StudentID, SectionID, TotalPay, DollarPerHour, StartDate, EndDate, TotalHours) values (1254938, 6718756, 811299, 43.94, 19.17, '2022-09-15', '2022-01-26', 15.19);
 
--- insert into weeklypayment_table (PaymentID, EmploymentID, WeekHours, WeekStartDate) values (8817432, 1487894, 0.09, '2022-03-31');
--- insert into weeklypayment_table (PaymentID, EmploymentID, WeekHours, WeekStartDate) values (8678345, 279534, 3.36, '2022-02-21');
+insert into weeklypayment_table (EmploymentID, WeekHours, WeekStartDate) values (0000001, 0.09, '2022-03-31');
+insert into weeklypayment_table (EmploymentID, WeekHours, WeekStartDate) values (0000002, 3.36, '2022-02-21');
 -- insert into weeklypayment_table (PaymentID, EmploymentID, WeekHours, WeekStartDate) values (615660, 1254938, 13.08, '2022-05-29');
 
--- insert into student_section_table (StudentID, SectionID, Grade, Passing) values (4416407, 9951836, 83.1735, 1);
--- insert into student_section_table (StudentID, SectionID, Grade, Passing) values (7764538, 7333728, 81.9627, 1);
+insert into student_section_table (StudentID, SectionID, Grade, Passing) values (0000001, 0000001, 83.1735, 1);
+insert into student_section_table (StudentID, SectionID, Grade, Passing) values (0000002, 0000002, 81.9627, 1);
 -- insert into student_section_table (StudentID, SectionID, Grade, Passing) values (1660685, 6224357, 22.5288, 0);
 -- insert into student_section_table (StudentID, SectionID, Grade, Passing) values (4985710, 811299, 83.2489, 1);
 -- insert into student_section_table (StudentID, SectionID, Grade, Passing) values (3661085, 9135305, 53.5746, 0);
