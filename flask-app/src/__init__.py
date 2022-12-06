@@ -19,7 +19,7 @@ def create_app():
     app.config['MYSQL_DATABASE_PASSWORD'] = open('/secrets/db_password.txt').readline()
     app.config['MYSQL_DATABASE_HOST'] = 'db'
     app.config['MYSQL_DATABASE_PORT'] = 3306
-    app.config['MYSQL_DATABASE_DB'] = 'classicmodels'  # Change this to your DB name
+    app.config['MYSQL_DATABASE_DB'] = 'cool_db'  # Change this to your DB name
 
     # Initialize the database object with the settings above. 
     db.init_app(app)
@@ -32,8 +32,8 @@ def create_app():
 
     # Register the routes that we just imported so they can be properly handled
     app.register_blueprint(views,       url_prefix='/classic')
-    app.register_blueprint(advisors,   url_prefix='/classic')
-    app.register_blueprint(professors,    url_prefix='/classic')
-    app.register_blueprint(students,    url_prefix='/classic')
+    app.register_blueprint(advisors,   url_prefix='/advisors')
+    app.register_blueprint(professors,    url_prefix='/professors')
+    app.register_blueprint(students,    url_prefix='/students')
 
     return app

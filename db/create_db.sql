@@ -1,4 +1,7 @@
 CREATE DATABASE cool_db;
+
+grant all privileges on cool_db.* to 'webapp'@'%';
+
 CREATE USER 'student1'@'%' IDENTIFIED BY 'student1_password';
 CREATE USER 'professor1'@'%' IDENTIFIED BY 'professor1_password';
 CREATE USER 'advisor1'@'%' IDENTIFIED BY 'advisor1_password';
